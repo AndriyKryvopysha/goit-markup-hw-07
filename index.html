@@ -18,7 +18,7 @@
     <header>
       <div class="container header">
         <nav class="navigation">
-          <a class="logo" lang="en" href="">Web<span class="header__logo">Studio</span></a>
+          <a class="logo logo--margin" lang="en" href="">Web<span class="header__logo">Studio</span></a>
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link navigation__link--current" href="./index.html">Студия</a></li>
             <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
@@ -273,46 +273,46 @@
 
       <section class="clients">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="clients-list">
-            <li class="clients-number">
-              <a class="clients-link first" href="">
-                <svg class="icon-yaco">
+          <h2 class="clients__title">Постоянные клиенты</h2>
+          <ul class="clients__list">
+            <li class="clients__member">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
                   <use href="./images/svg/sprite-opt.svg#yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-number">
-              <a class="clients-link" href="">
-                <svg class="icon-tagline">
+            <li class="clients__member">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
                   <use href="./images/svg/sprite-opt.svg#tagline"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-number">
-              <a class="clients-link" href="">
-                <svg class="icon-company3">
+            <li class="clients__member">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
                   <use href="./images/svg/sprite-opt.svg#company3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-number">
-              <a class="clients-link" href="">
-                <svg class="icon-foster">
+            <li class="clients__member">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
                   <use href="./images/svg/sprite-opt.svg#foster"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-number">
-              <a class="clients-link" href="">
-                <svg class="icon-brand">
+            <li class="clients__member">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
                   <use href="./images/svg/sprite-opt.svg#brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-number">
-              <a class="clients-link" href="">
-                <svg class="icon-company6">
+            <li class="clients__member">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
                   <use href="./images/svg/sprite-opt.svg#company6"></use>
                 </svg>
               </a>
@@ -323,49 +323,49 @@
     </main>
     <!--Подвал Сайта-->
     <footer>
-      <div class="container-foot">
-        <div class="logo-psn">
-          <a class="logo-f" lang="en" href="">Web<span class="logo-footer">Studio</span></a>
-          <ul class="foot-psn">
-            <li class="foot-item">
-              <a class="foot-address" href="https://www.google.com.ua/maps/"
+      <div class="container footer">
+        <div class="footer-data">
+          <a class="logo" lang="en" href="">Web<span class="footer__logo">Studio</span></a>
+          <ul class="footer__contact">
+            <li class="contact__item">
+              <a class="contact__address" href="https://www.google.com.ua/maps/"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="foot-item">
-              <a class="foot-contact" href="mailto:info@example.com">info@example.com</a>
+            <li class="contact__item">
+              <a class="contact__link" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li class="foot-item">
-              <a class="foot-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="contact__item">
+              <a class="contact__link" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
         </div>
-        <div class="foot-links-psn">
-          <h3 class="foot-links-titel">присоединяйтесь</h3>
-          <ul class="foot-links-list">
+        <div class="footer-links">
+          <h3 class="footer__titel">присоединяйтесь</h3>
+          <ul class="footer-links__list">
             <li>
-              <a class="link-social-foot first" href="">
+              <a class="footer-links__link footer-links__link--first" href="">
                 <svg class="icon" style="fill: #ffffff">
                   <use href="./images/svg/sprite-opt.svg#inst"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link-social-foot" href="">
+              <a class="footer-links__link" href="">
                 <svg class="icon" style="fill: #ffffff">
                   <use href="./images/svg/sprite-opt.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link-social-foot" href="">
+              <a class="footer-links__link" href="">
                 <svg class="icon" style="fill: #ffffff">
                   <use href="./images/svg/sprite-opt.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link-social-foot" href="">
+              <a class="footer-links__link" href="">
                 <svg class="icon" style="fill: #ffffff">
                   <use href="./images/svg/sprite-opt.svg#link"></use>
                 </svg>
@@ -374,22 +374,23 @@
           </ul>
         </div>
 
-        <div class="subscribe-foot">
-          <h3 class="foot-links-titel">подпишитесь на рассылку</h3>
+        <div class="footer__subscribe">
+          <h3 class="footer__titel">подпишитесь на рассылку</h3>
           <form class="subscribe">
-            <label for="mail" class="form-label-subscribe"></label>
+            <label for="mail" class="subscribe__form-label"></label>
             <input
               type="email"
-              class="form-input-subscribe"
+              class="subscribe__form-input"
               name="mail"
               id="email"
               placeholder="E-mail"
             />
-            <button class="form-button-subscribe" type="button">Подписаться</button>
+            <button class="subscribe__button button" type="button">Подписаться</button>
           </form>
         </div>
       </div>
     </footer>
+    
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="close">
@@ -401,7 +402,7 @@
         <!-- Form inside Modal  -->
 
         <form class="order-service-form">
-          <h2 class="form-field-titel">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="form__titel">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="form-field">
             <label for="name" class="form-label">Имя</label>
             <input type="text" name="name" id="name" class="form-input" placeholder=" " autofocus />            
@@ -426,7 +427,7 @@
             </svg>
           </div>
 
-          <div class="form-field-comment">
+          <div class="form-field__comment">
             <label for="comment" class="form-label">Коментарий</label>
             <textarea
               class="comment"
@@ -437,11 +438,11 @@
             ></textarea>            
           </div>
 
-          <div class="form-field-agree">
-            <label class="agreement">
+          <div class="form-field__agree">
+            <label class="agree-label">
               <input class="checkbox" type="checkbox" name="agreement" value="agree" />
               <span class="checkbox-custom"></span>Соглашаюсь с рассылкой и принимаю
-              <a class="agree-link" href="">Условия договора</a></label>
+              <a class="agree__link" href="">Условия договора</a></label>
               
           </div>
 
