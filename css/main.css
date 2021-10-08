@@ -202,23 +202,31 @@ header {
   margin-right: auto;
 }
 
-.button--hero {
-  display: block;
+.button {
   text-align: center;
-  padding: 10px 32px 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: Roboto;
-  background-color: #2196f3;
-  color: #ffffff;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
   cursor: pointer;
-  border-radius: 6px;
 }
 
-/* Фильтр */
+.hero__button {
+  display: block;
+  padding: 10px 32px 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page Portfolio Фильтр */
 .content-list {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -382,13 +390,13 @@ header {
   margin-bottom: 0px;
 }
 
-/* Преимущества */
-.adv {
+/* Page 1 Преимущества */
+.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.advantages {
+.advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +405,7 @@ header {
           justify-content: center;
 }
 
-.advantage-item::before {
+.advantage__item::before {
   content: '';
   display: block;
   height: 120px;
@@ -427,19 +435,19 @@ header {
   background-size: 70px 70px;
 }
 
-.advantage-item {
+.advantage__item {
   display: block;
   text-align: left;
   width: 270px;
   padding-right: 0px;
 }
 
-.advantage-item + .advantage-item {
+.advantage__item + .advantage__item {
   margin-left: 30px;
   margin-right: 0px;
 }
 
-.advantages-title {
+.advantages__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -448,7 +456,7 @@ header {
   margin-bottom: 0px;
 }
 
-.advantages-text {
+.advantages__text {
   line-height: 1.71;
   color: #757575;
   margin-top: 10px;
@@ -463,7 +471,8 @@ header {
   padding-bottom: 94px;
 }
 
-.section-title {
+.example__title,
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -472,7 +481,7 @@ header {
   margin-bottom: 50px;
 }
 
-.example-img {
+.example__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,19 +492,19 @@ header {
           justify-content: center;
 }
 
-.img-item + .img-item {
+.example__item + .example__item {
   margin-left: 30px;
 }
 
-.img-item {
+.example__item {
   position: relative;
 }
 
-.image {
+.example__image {
   display: block;
 }
 
-.example-text {
+.example__text {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -526,7 +535,7 @@ header {
   padding-bottom: 94px;
 }
 
-.members {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,7 +548,7 @@ header {
   background-color: #f5f4fa;
 }
 
-.team-card {
+.member {
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,11 +567,11 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-card:last-child {
+.member:last-child {
   margin-right: 0px;
 }
 
-.card-discription {
+.member__discription {
   padding-top: 30px;
   margin-bottom: 16px;
 }
@@ -595,7 +604,7 @@ header {
   margin-right: 0px;
 }
 
-.member-links {
+.member__links {
   width: 270px;
   margin-left: auto;
   margin-right: auto;
@@ -603,7 +612,7 @@ header {
 }
 
 /* ==Social Icons== */
-.team-links-list {
+.social-links__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,7 +623,7 @@ header {
       align-content: center;
 }
 
-.link-social {
+.social-links__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,37 +646,17 @@ header {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-social:hover,
-.link-social:focus {
+.social-links__link:hover,
+.social-links__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
 
-.first {
+.social-links__link--first {
   margin-left: 0px;
 }
 
-.icon-inst {
-  -o-object-position: center;
-     object-position: center;
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.icon-twit {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.icon-face {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.icon-in {
+.icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
