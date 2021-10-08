@@ -5,6 +5,7 @@ font-family: Roboto;
 ul {
   margin: 0;
   padding-left: 0px;
+  list-style-type: none;
 }
 
 body {
@@ -29,6 +30,18 @@ header {
   padding-right: 15px;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -41,33 +54,12 @@ header {
   margin-right: 93px;
 }
 
-.logo-header {
+.header__logo {
   color: black;
 }
 
 /* Навигация */
-.container-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.site-nav {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,13 +68,13 @@ ul {
           align-items: center;
 }
 
-.link {
+.navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-link {
+.navigation__link {
   position: relative;
   display: block;
   text-decoration: none;
@@ -98,7 +90,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::after {
+.navigation__link--current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -110,18 +102,18 @@ ul {
   background-color: #2196f3;
 }
 
-.links {
+.navigation__item {
   padding-top: 32px;
   padding-bottom: 32px;
   margin-right: 50px;
 }
 
-.links:last-child {
+.navigation__item:last-child {
   margin-right: 0px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: #2196f3;
 }
 
@@ -138,7 +130,7 @@ ul {
   margin-left: auto;
 }
 
-.nav-contact {
+.auth__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,24 +147,24 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-contact:hover,
-.nav-contact:focus {
+.auth__link:hover,
+.auth__link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
 
-.icon-auth {
+.auth__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.auth-contact {
+.auth__item {
   margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.auth-contact:last-child {
+.auth__item:last-child {
   margin-right: 0px;
 }
 

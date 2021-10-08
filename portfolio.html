@@ -10,41 +10,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка сайта-->
 
-    <header>
-      <div class="container-nav">
-        <nav class="site-nav">
-          <a class="logo" lang="en" href="">Web<span class="logo-header">Studio</span></a>
-          <ul class="link">
-            <li class="links"><a class="nav-link" href="./index.html">Студия</a></li>
-            <li class="links"><a class="nav-link current" href="./portfolio.html">Портфолио</a></li>
-            <li class="links"><a class="nav-link" href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="auth">
-          <li class="auth-contact">
-            <a class="nav-contact" href="mailto:info@devstudio.com"
-              ><svg class="icon-auth" width="16" height="16">
-                <use href="./images/svg/sprite-opt.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-contact">
-            <a class="nav-contact" href="tel:+380961111111"
-              ><svg class="icon-auth" width="16" height="16">
-                <use href="./images/svg/sprite-opt.svg#phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
+<header>
+  <div class="container header">
+    <nav class="navigation">
+      <a class="logo" lang="en" href="">Web<span class="header__logo">Studio</span></a>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link"
+            href="./index.html">Студия</a></li>
+        <li class="navigation__item"><a class="navigation__link navigation__link--current" href="./portfolio.html">Портфолио</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="auth">
+      <li class="auth__item">
+        <a class="auth__link" href="mailto:info@devstudio.com"><svg class="auth__icon" width="16" height="16">
+            <use href="./images/svg/sprite-opt.svg#envelope"></use>
+          </svg>
+          info@devstudio.com</a>
+      </li>
+      <li class="auth__item">
+        <a class="auth__link" href="tel:+380961111111"><svg class="auth__icon" width="16" height="16">
+            <use href="./images/svg/sprite-opt.svg#phone"></use>
+          </svg>
+          +38 096 111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
     <main>
       <section class="content-list">
         <div class="container">
